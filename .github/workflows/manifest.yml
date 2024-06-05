@@ -20,6 +20,7 @@ jobs:
           fetch-depth: 0
 
       - name: Manifest
+        run: echo '${{ toJSON(github) }}'
         uses: zephyrproject-rtos/action-manifest@16c4cfa380ae2b6fa3daddb1a35032e69422a20f
         with:
           github-token: ${{ secrets.NCS_GITHUB_TOKEN }}
