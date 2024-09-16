@@ -585,7 +585,7 @@ int nrf_provisioning_req(void)
 	return ret;
 }
 
-#define NRF_PROVISIONING_STACK_SIZE 3072
+#define NRF_PROVISIONING_STACK_SIZE 4096
 #define NRF_PROVISIONING_PRIORITY 5
 
 K_THREAD_DEFINE(nrf_provisioning, NRF_PROVISIONING_STACK_SIZE,
